@@ -1,0 +1,6 @@
+@CrazyOrders.API_HostAddress = http://localhost:5076
+
+GET {{CrazyOrders.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
