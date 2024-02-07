@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrazyOrders.API", "CrazyOrders.API\CrazyOrders.API.csproj", "{572F7F1B-485D-4ACA-B324-DA68FA9507B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrazyOrders.API", "CrazyOrders.API\CrazyOrders.API.csproj", "{572F7F1B-485D-4ACA-B324-DA68FA9507B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrazyOrders.Tests", "CrazyOrders.Tests\CrazyOrders.Tests.csproj", "{EA03AE82-C60C-4767-9D80-85BF807DD8C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrazyOrders.Tests", "CrazyOrders.Tests\CrazyOrders.Tests.csproj", "{EA03AE82-C60C-4767-9D80-85BF807DD8C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrazyOrders.Application", "CrazyOrders.Application\CrazyOrders.Application.csproj", "{E1998CE4-A43B-4F93-8F90-EE9CDF6A6471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrazyOrders.Application", "CrazyOrders.Application\CrazyOrders.Application.csproj", "{E1998CE4-A43B-4F93-8F90-EE9CDF6A6471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrazyOrders.Domain", "CrazyOrders.Domain\CrazyOrders.Domain.csproj", "{16D16926-87F9-4C43-8E41-631BDBC3FD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrazyOrders.Domain", "CrazyOrders.Domain\CrazyOrders.Domain.csproj", "{16D16926-87F9-4C43-8E41-631BDBC3FD00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrazyOrders.Infrastructure", "CrazyOrders.Infrastructure\CrazyOrders.Infrastructure.csproj", "{105B2311-32B0-4C83-81BB-620BEE4DDA18}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrazyOrders.OrderProcessors", "CrazyOrders.OrderProcessors\CrazyOrders.OrderProcessors.csproj", "{4D0E35A7-B669-4424-9CBF-3E6F970580D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrazyOrders.Infrastructure", "CrazyOrders.Infrastructure\CrazyOrders.Infrastructure.csproj", "{105B2311-32B0-4C83-81BB-620BEE4DDA18}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{D9CCE72E-38F5-4F52-A1C4-09E78E3B9DE9}"
 EndProject
@@ -43,17 +41,12 @@ Global
 		{105B2311-32B0-4C83-81BB-620BEE4DDA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105B2311-32B0-4C83-81BB-620BEE4DDA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105B2311-32B0-4C83-81BB-620BEE4DDA18}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D0E35A7-B669-4424-9CBF-3E6F970580D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D0E35A7-B669-4424-9CBF-3E6F970580D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D0E35A7-B669-4424-9CBF-3E6F970580D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D0E35A7-B669-4424-9CBF-3E6F970580D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{572F7F1B-485D-4ACA-B324-DA68FA9507B6} = {D9CCE72E-38F5-4F52-A1C4-09E78E3B9DE9}
-		{4D0E35A7-B669-4424-9CBF-3E6F970580D7} = {D9CCE72E-38F5-4F52-A1C4-09E78E3B9DE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CBC549CD-6EDD-4462-9B2E-5AD6B0FD8090}

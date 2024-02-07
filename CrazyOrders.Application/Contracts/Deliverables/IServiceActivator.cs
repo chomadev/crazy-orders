@@ -2,6 +2,6 @@
 {
     public interface IServiceActivator
     {
-        void Activate();
+        void Activate(string service);
     }
 }

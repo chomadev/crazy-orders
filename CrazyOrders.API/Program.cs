@@ -1,24 +1,21 @@
-using CrazyOrders.API.OrderProcessors;
-using CrazyOrders.Application.Contracts.Messaging;
+using CrazyOrders.Application;
 using CrazyOrders.Application.Contracts.PaymentGateway;
-using CrazyOrders.Infrastructure.Messaging;
 using CrazyOrders.Infrastructure.PaymentGateway;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var loggerBuilder = builder.Logging.AddConsole();
 
-builder.Services
-    .AddSingleton<IEventBroker, EventBroker>()
-    .AddScoped<IPaymentGateway, PaymentGateway>();
 
-builder.Services.AddHostedService<LongRunningOrderProcessor>();
+
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 

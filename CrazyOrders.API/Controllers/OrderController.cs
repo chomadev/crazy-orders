@@ -1,7 +1,7 @@
-using CrazyOrders.Application.Contracts.Messaging;
-using CrazyOrders.Application.Contracts.PaymentGateway;
-using CrazyOrders.Application.UseCases;
+using CrazyOrders.Application.UseCases.OrderWithProductCases;
+using CrazyOrders.Application.UseCases.OrderWithServiceCases;
 using CrazyOrders.Domain.ValueObjects.Orders;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CrazyOrders.API.Controllers
@@ -11,28 +11,20 @@ namespace CrazyOrders.API.Controllers
     public class OrderController : ControllerBase
     {
         private readonly ILogger<OrderController> logger;
-        private readonly IEventBroker eventBroker;
-        private readonly IPaymentGateway paymentGateway;
+        private readonly IMediator mediator;
 
         public OrderController(ILogger<OrderController> logger,
-            IEventBroker eventBroker,
-            IPaymentGateway paymentGateway)
+            IMediator mediator)
         {
             this.logger = logger;
-            this.eventBroker = eventBroker;
-            this.paymentGateway = paymentGateway;
+            this.mediator = mediator;
         }
 
         [HttpPost("/product", Name = "Create Order with Product")]
         public async Task<IActionResult> CreateOrderWithProduct(OrderWithProduct order)
         {
             logger.LogInformation("Create order requested: {id}", order.Id);
-            if (!order.IsValid())
-            {
-                return BadRequest();
-            }
-            await new CreateOrderWithProduct(eventBroker, paymentGateway, order)
-                .Run();
+            await mediator.Send(new CreateOrderWithProductCommand(order));
             return Created();
         }
 
@@ -40,12 +32,7 @@ namespace CrazyOrders.API.Controllers
         public async Task<IActionResult> CreateOrderWithService(OrderWithService order)
         {
             logger.LogInformation("Create order requested: {id}", order.Id);
-            if (!order.IsValid())
-            {
-                return BadRequest();
-            }
-            await new CreateOrderWithServiceActivation(eventBroker, paymentGateway, order)
-                .Run();
+            await mediator.Send(new CreateOrderWithServiceCommand(order));
             return Created();
         }
     }
