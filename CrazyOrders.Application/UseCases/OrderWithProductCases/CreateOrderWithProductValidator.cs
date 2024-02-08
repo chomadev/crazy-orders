@@ -8,6 +8,7 @@ namespace CrazyOrders.Application.UseCases.OrderWithProductCases
         {
             RuleFor(x => x.Order).NotNull();
             RuleFor(x => x.Order.PaymentDetail).NotNull();
+            RuleFor(x => x.Order.PaymentDetail.Value).GreaterThan(0);
             RuleFor(x => x.Order.Products).NotEmpty();
         }
     }

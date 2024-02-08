@@ -9,8 +9,6 @@ builder.Services.AddControllers();
 
 var loggerBuilder = builder.Logging.AddConsole();
 
-
-
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices();
 

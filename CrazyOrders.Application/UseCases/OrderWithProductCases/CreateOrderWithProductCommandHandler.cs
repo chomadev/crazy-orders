@@ -38,6 +38,8 @@ namespace CrazyOrders.Application.UseCases.OrderWithProductCases
             {
                 productShipping.Ship(product);
             }
+
+            //emit OrderCreated event
         }
     }
 }

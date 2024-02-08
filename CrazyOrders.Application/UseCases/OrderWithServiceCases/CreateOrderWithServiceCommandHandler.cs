@@ -26,6 +26,9 @@ namespace CrazyOrders.Application.UseCases.OrderWithServiceCases
             {
                 serviceActivator.Activate(service);
             }
+
+            //emit OrderCreated event
+
             return Task.CompletedTask;
         }
     }
