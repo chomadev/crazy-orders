@@ -1,7 +1,7 @@
 ﻿using CrazyOrders.Application.Contracts.Deliverables;
 using CrazyOrders.Application.Contracts.PaymentGateway;
+using CrazyOrders.Domain.Entities.Orders;
 using CrazyOrders.Domain.Exceptions;
-using CrazyOrders.Domain.ValueObjects.Orders;
 using MediatR;
 using Microsoft.Extensions.Logging;
 

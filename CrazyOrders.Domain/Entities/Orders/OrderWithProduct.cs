@@ -1,4 +1,4 @@
-﻿namespace CrazyOrders.Domain.ValueObjects.Orders
+﻿namespace CrazyOrders.Domain.Entities.Orders
 {
     public class OrderWithProduct : BaseOrder
     {

@@ -1,6 +1,6 @@
 using CrazyOrders.Application.UseCases.OrderWithProductCases;
 using CrazyOrders.Application.UseCases.OrderWithServiceCases;
-using CrazyOrders.Domain.ValueObjects.Orders;
+using CrazyOrders.Domain.Entities.Orders;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

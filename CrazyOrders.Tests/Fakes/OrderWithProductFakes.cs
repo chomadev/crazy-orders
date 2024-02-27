@@ -1,5 +1,5 @@
-﻿using CrazyOrders.Domain.ValueObjects;
-using CrazyOrders.Domain.ValueObjects.Orders;
+﻿using CrazyOrders.Domain.Entities.Orders;
+using CrazyOrders.Domain.ValueObjects;
 
 namespace CrazyOrders.Tests.Fakes
 {

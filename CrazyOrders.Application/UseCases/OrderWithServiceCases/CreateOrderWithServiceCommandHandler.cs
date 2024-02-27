@@ -1,5 +1,5 @@
 ﻿using CrazyOrders.Application.Contracts.Deliverables;
-using CrazyOrders.Domain.ValueObjects.Orders;
+using CrazyOrders.Domain.Entities.Orders;
 using MediatR;
 using Microsoft.Extensions.Logging;
 

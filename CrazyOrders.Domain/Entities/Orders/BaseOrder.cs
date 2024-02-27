@@ -1,4 +1,6 @@
-﻿namespace CrazyOrders.Domain.ValueObjects.Orders
+﻿using CrazyOrders.Domain.ValueObjects;
+
+namespace CrazyOrders.Domain.Entities.Orders
 {
     public class BaseOrder
     {

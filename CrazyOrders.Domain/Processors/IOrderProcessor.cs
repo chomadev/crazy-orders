@@ -1,4 +1,4 @@
-﻿using CrazyOrders.Domain.ValueObjects.Orders;
+﻿using CrazyOrders.Domain.Entities.Orders;
 
 namespace CrazyOrders.Domain.Processors
 {
